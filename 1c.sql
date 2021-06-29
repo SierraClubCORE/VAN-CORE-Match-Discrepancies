@@ -1,4 +1,4 @@
--- VAN records that do not have an SFID listed
+-- VAN records that do not have an SFID listed ('Sierra Club (c4)' Committee)
 
 SELECT a.statecode, a.vanid, b.salesforceid, a.firstname||' '||a.lastname AS van_fullname
 FROM sc_van_staging.tsm_sc_contacts_myc a
