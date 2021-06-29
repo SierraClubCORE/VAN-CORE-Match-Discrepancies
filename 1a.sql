@@ -1,4 +1,4 @@
--- VAN records that have an SFID listed. This SFID corresponds to a different VANID and VAN state in Salesforce
+-- VAN records that have an SFID listed. This SFID corresponds to a different VANID and VAN state in Salesforce ('Sierra Club (c4)' Committee)
 
 CREATE TEMPORARY TABLE step1 AS
 SELECT a.statecode, a.vanid, b.salesforceid, a.firstname||' '||a.lastname AS van_fullname, a.committeeid, a.createdby
