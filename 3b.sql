@@ -1,8 +1,8 @@
--- A variant of the cases in 3a. Characteristics are:
--- * Same myC VANID associated with multiple SF records
--- * The SF records do not appear to represent the same person based on visual inspection
--- * All corresponding SF records have voter file VAN ID, which is different for each SF record
--- * When looking up the myC VANID in VAN, the listed SFID’s SF record has a different VoterFileVANID associated with it then what’s listed in myC
+-- A variant of the cases in 3a ('Sierra Club (c4)' Committee). Characteristics are:
+--  * Same myC VANID associated with multiple SF records
+--  * The SF records do not appear to represent the same person based on visual inspection
+--  * All corresponding SF records have voter file VAN ID, which is different for each SF record
+--  * When looking up the myC VANID in VAN, the listed SFID’s SF record has a different VoterFileVANID associated with it then what’s listed in myC
 
 CREATE TEMPORARY TABLE step1 AS
 SELECT van_id_club__c, van_state__c, count(*)
